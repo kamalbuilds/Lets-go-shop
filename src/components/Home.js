@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import greyTshirt from '../images/greytshirt.jpg';
 import react from '../images/react.jpg';
 import go from '../images/go.png';
 import { connect } from 'react-redux';

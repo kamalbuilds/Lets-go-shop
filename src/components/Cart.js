@@ -4,8 +4,6 @@ import { productQuantity, clearProduct } from '../actions/productQuantity';
 import typescript from '../images/ts.jpg';
 import hcv from '../images/hcv.jpg';
 import react from '../images/react.jpg';
-import blackTshirt from '../images/blacktshirt.jpg';
-import blackHoddie from '../images/blackhoddie.jpg';
 import go from '../images/go.png';
 import rust from '../images/rust.jpg';
 
@@ -28,10 +26,6 @@ function Cart({basketProps, productQuantity, clearProduct}) {
             return hcv;
         } else if(product.tagName === 'react') {
             return react;
-        } else if(product.tagName === 'blackTshirt') {
-            return blackTshirt;
-        } else if(product.tagName === 'blackHoddie') {
-            return blackHoddie;
         }
           else if(product.tagName === 'typescript') {
             return typescript;
