@@ -6,7 +6,6 @@
 ![image](https://user-images.githubusercontent.com/95926324/183288243-690996c8-f5c9-42cd-8312-cec7e97ba305.png)
 ![image](https://user-images.githubusercontent.com/95926324/183288324-96a0d172-36f2-4b33-a965-c40ecf4ec5db.png)
 ![image](https://user-images.githubusercontent.com/95926324/183288398-bf31ee82-8b9e-4762-9059-a44f652bc493.png)
-![image](https://user-images.githubusercontent.com/95926324/183288478-4b30be36-10d0-499d-b820-0c7a1eaf44fb.png)
 
 </div>
 <h2> Features of this project</h2>
