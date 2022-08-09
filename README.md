@@ -8,13 +8,23 @@
 ![image](https://user-images.githubusercontent.com/95926324/183288398-bf31ee82-8b9e-4762-9059-a44f652bc493.png)
 
 </div>
-<h2> Features of this project</h2>
-<h3> This project is a perfect example of how to implement Redux with React.</h3>
-<h3>Select products from the home page that the site got to offer</h3>
-<h3>Add to Cart</h3>
-<h3>Visit the cart page to see your selected products</h3>
-<h3>Increase /Decrease the quantity of products</h3>
-<h3>Remove directly if you changed your mind from the cart page</h3>
+<h2>Features of this project</h2>
+<h3>◉ This project is a perfect example of how to implement Redux with React.</h3>
+<h3>◉ Select products from the home page that the site got to offer</h3>
+<h3>◉ Add to Cart</h3>
+<h3>◉ Visit the cart page to see your selected products</h3>
+<h3>◉ Increase /Decrease the quantity of products</h3>
+<h3>◉ Remove directly if you changed your mind from the cart page</h3>
+
+What I learnt from this project?
+
+1> How to Pass a state from one component to another using state
+
+2> How to use Redux to pass state from lower to higher order without the standard unidirectional flow.
+
+3> How to use material UI in your project.
+
+4> How to store data in the form of Cart.
 
 Need of Redux
 
@@ -25,13 +35,18 @@ Need of Redux
 Redux flow
 
 1>App.js provider wrap and pass store to provider
-not now 2> store.js create in src
+not now
+
+2> store.js create in src
+
 3> create actions to take from home.js 
 dispatch the action of type: ____ from type.js
+
 4> action-> reducer-> store 
 
 <h3>For local developement</h3>
-<h4>Run the following commands from the terminal</h4>
+<h4>Fork the repo</h4>
+<h4>Then Run the following commands from the terminal</h4>
 
 ```
 npm install 
