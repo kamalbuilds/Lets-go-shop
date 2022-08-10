@@ -54,3 +54,6 @@ npm install
 ```
 npm run start
 ```
+<h2>Future Aspect</h2>
+* In future the project needs a payment gateway for users to buy smoothly.
+* A map where users can track their order.
