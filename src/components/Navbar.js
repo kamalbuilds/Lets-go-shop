@@ -17,11 +17,11 @@ function Navbar(props) {
             <nav>
             <h2>Let's Shop 💝</h2>
             <ul>
-                <Button variant="contained" color="success"><Link to="/">Home</Link></Button>
+                <Button variant="contained" color="success" href="/">Home</Button>
                 <li><Link to="/about">About</Link></li>
                 <li className="cart">
                 
-                <Button variant="outlined" color="primary">
+                <Button variant="contained" color="primary">
                     <Link to="/cart"><ion-icon name="basket"></ion-icon>Cart
                     <span>{props.basketProps.basketNumbers}</span>
                     </Link>
