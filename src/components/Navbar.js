@@ -8,7 +8,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
 function Navbar(props) {
 
-  console.log("Navbar", props);
+  console.log("Top Navbar", props);
 
   useEffect(() => {
     console.log(getNumbers());
