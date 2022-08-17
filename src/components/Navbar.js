@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { getNumbers } from '../actions/getAction';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import IconButton from '@mui/material/IconButton';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 function Navbar(props) {
     console.log('Navbar',props);
@@ -17,15 +19,17 @@ function Navbar(props) {
             <nav>
             <h2>Let's Shop 💝</h2>
             <ul>
-                <Button variant="contained" color="success"><Link to="/">Home</Link></Button>
+                <Button variant="contained" color="success" href="/">Home</Button>
                 <li><Link to="/about">About</Link></li>
                 <li className="cart">
                 
-                <Button variant="outlined" color="primary">
-                    <Link to="/cart"><ion-icon name="basket"></ion-icon>Cart
+                <Button variant="contained" color="primary" size="small" href="/cart">
+                    <IconButton color="success" aria-label="add to shopping cart">
+                        <AddShoppingCartIcon />
+                    </IconButton>
                     <span>{props.basketProps.basketNumbers}</span>
-                    </Link>
                 </Button>
+
                 
                 </li>
             </ul> 
