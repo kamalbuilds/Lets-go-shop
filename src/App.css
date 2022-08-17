@@ -45,19 +45,18 @@ nav {
 nav li {
   list-style: none;
   display: inline-block;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 li a {
-  padding: 5px;
-  background-color: #fff;
-  text-decoration: none;;
+  /* padding: 5px; */
+  text-decoration: none;
 }
 
 .cart ion-icon {
   vertical-align: bottom;
-  font-size: 20px;
+  font-size: 80px;
   padding-right: 5px;
  }
 
