@@ -6,14 +6,14 @@ const initialState = {
         rust:{
             name: 'Rust',
             tagName: 'rust',
-            price: '$21',
+            price: '$15',
             numbers: 0,
             incart:false
         },
         react: {
             name: "ReactJS",
             tagName: 'react',
-            price: 120.00,
+            price: 6.00,
             numbers: 0,
             inCart: false
         },
@@ -45,9 +45,9 @@ const initialState = {
             numbers: 0,
             inCart: false
         },
-        hcv: {
-            name: "hcv",
-            tagName: 'hcv',
+        cpp: {
+            name: "cpp",
+            tagName: 'cpp',
             price: 5.00,
             numbers: 0,
             inCart: false
