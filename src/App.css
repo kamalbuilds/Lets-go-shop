@@ -80,8 +80,16 @@ li a {
 .image {
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  width: 150px;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+  height: 80%;
 }
 
 .addToCart {

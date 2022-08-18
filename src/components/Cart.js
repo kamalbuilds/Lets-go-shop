@@ -4,7 +4,7 @@ import { productQuantity, clearProduct } from '../actions/productQuantity';
 import typescript from '../images/ts.jpg';
 import react from '../images/react.jpg';
 import go from '../images/go.png';
-import rust from '../images/rust.jpg';
+import rust from '../images/rust.png';
 import cpp from '../images/cplusplus.jpg';
 
 function Cart({basketProps, productQuantity, clearProduct}) {
