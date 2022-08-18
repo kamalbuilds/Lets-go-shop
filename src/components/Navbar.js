@@ -4,16 +4,7 @@ import { getNumbers } from "../actions/getAction";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
-
-
 function Navbar(props) {
-
-  console.log("Top Navbar", props);
-
-  useEffect(() => {
-    console.log(getNumbers());
-    getNumbers();
-  }, []);
   return (
     <header>
       <div className="overlay"></div>
@@ -58,7 +49,6 @@ function Navbar(props) {
     </header>
   );
 }
-
 const mapStateToProps = (state) => ({
   basketProps: state.basketState,
 });
