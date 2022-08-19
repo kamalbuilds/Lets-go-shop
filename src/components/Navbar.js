@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import { getNumbers } from "../actions/getAction";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function Navbar(props) {
 
@@ -39,7 +38,7 @@ function Navbar(props) {
           <li>
             <Button
               variant="contained"
-              startIcon={<ShoppingBasketIcon style={{color:"blue"}} />}
+              startIcon={<ShoppingCartIcon style={{color:"green"}} size="large" />}
               style={{
                 backgroundColor: "orange",
                 color: "red",
@@ -48,7 +47,6 @@ function Navbar(props) {
               }}
             >
               <Link to="/cart">
-                Cart
                 <span>{props.basketProps.basketNumbers}</span>
               </Link>
             </Button>
