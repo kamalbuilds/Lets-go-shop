@@ -123,10 +123,16 @@ img {
 
 .container-products .icon {
   font-size: 25px;
-  color: blue;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+.container-products .delete {
+  color: rgb(182, 67, 67);
+}
+.container-products .decrease,
+.increase {
+  color: green;
 }
 
 .product-header {

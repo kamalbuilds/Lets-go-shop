@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
-import { Cancel, ChevronLeft, ChevronRight } from "@material-ui/icons";
+import {
+  Delete,
+  RemoveCircleOutline,
+  AddCircleOutline,
+} from "@material-ui/icons";
 import { connect } from "react-redux";
 import { productQuantity, clearProduct } from "../actions/productQuantity";
 import typescript from "../images/ts.jpg";
@@ -42,8 +46,8 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
     return (
       <Fragment key={index}>
         <div className="product">
-          <Cancel
-            className="icon"
+          <Delete
+            className="icon delete"
             onClick={() => clearProduct(product.tagName)}
           />
           <img src={productImages(product)} />
@@ -51,12 +55,12 @@ function Cart({ basketProps, productQuantity, clearProduct }) {
         </div>
         <div className="price sm-hide">${product.price}.00</div>
         <div className="quantity">
-          <ChevronLeft
+          <RemoveCircleOutline
             onClick={() => productQuantity("decrease", product.tagName)}
             className="decrease icon"
           />
           <span>{product.numbers}</span>
-          <ChevronRight
+          <AddCircleOutline
             onClick={() => productQuantity("increase", product.tagName)}
             className="increase icon"
           />
