@@ -23,7 +23,7 @@ function Navbar(props) {
                 
                 <Button variant="contained" color="primary">
                     <Link to="/cart"><ion-icon name="basket"></ion-icon>Cart
-                    <span>{props.basketProps.basketNumbers}</span>
+                    <span> {props.basketProps.basketNumbers}</span>
                     </Link>
                 </Button>
                 

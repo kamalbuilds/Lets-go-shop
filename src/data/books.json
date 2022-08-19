@@ -1,0 +1,202 @@
+[
+    {
+        
+            "name": "Rust",
+            "tagName": "rust",
+            "price": 15,
+            "imgUrl": "rust.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "ReactJS",
+            "tagName": "react",
+            "price": 16,
+            "imgUrl": "react2.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Grey Hoddie",
+            "tagName": "greyHoddie",
+            "imgUrl": "greyhoodie.jpg",
+            "price": 35,
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Black Tshirt",
+            "tagName": "blackTshirt",
+            "imgUrl": "blackTshirt.jpg",
+            "price": 50,
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "typescript",
+            "tagName": "typescript",
+            "imgUrl": "typescript.jpg",
+            "price": 14,
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Go lang",
+            "tagName": "go",
+            "price": 69,
+            "imgUrl": "go.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "cpp",
+            "tagName": "cpp",
+            "price": 19,
+            "imgUrl": "cplusplus2.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Algorithms",
+            "tagName": "agorithms",
+            "price": 123,
+            "imgUrl": "algorithms.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+       
+            "name": "Java",
+            "tagName": "java",
+            "price": 15,
+            "imgUrl": "java.png",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Python",
+            "tagName": "python",
+            "price": 25,
+            "imgUrl": "python.png",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "C#",
+            "tagName": "csharp",
+            "price": 12,
+            "imgUrl": "csharp.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "coding",
+            "tagName": "coding",
+            "price": 42,
+            "imgUrl": "coding.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Kotlin",
+            "tagName": "kotlin",
+            "price": 100,
+            "imgUrl": "kotlin.jpeg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Design System",
+            "tagName": "design-system",
+            "price": 150,
+            "imgUrl": "design-s.png",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "React with Typescript",
+            "tagName": "react-ts",
+            "price": 6,
+            "imgUrl": "r-ts.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "JavaScript",
+            "tagName": "javascript",
+            "price": 15,
+            "imgUrl": "javascript.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "jQuery",
+            "tagName": "jquery",
+            "imgUrl": "jquery.png",
+            "price": 18,
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "NodeJS",
+            "tagName": "nodejs",
+            "imgUrl": "nodejs.jpg",
+            "price": 74,
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "PHP",
+            "tagName": "php",
+            "price": 87,
+            "imgUrl": "php.jpg",
+            "numbers": 0,
+            "inCart": false
+        
+    },
+    {
+        
+            "name": "Swift",
+            "tagName": "swift",
+            "imgUrl": "swift.png",
+            "price": 235,
+            "numbers": 0,
+            "inCart": false
+        
+    }
+]

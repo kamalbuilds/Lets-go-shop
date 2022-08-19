@@ -1,14 +1,14 @@
 import React, {Fragment} from 'react';
 import { connect } from 'react-redux';
 import { productQuantity, clearProduct } from '../actions/productQuantity';
-import typescript from '../images/ts.jpg';
-import react from '../images/react.jpg';
-import go from '../images/go.png';
-import rust from '../images/rust.jpg';
-import cpp from '../images/cplusplus.jpg';
+// import typescript from '../images/ts.jpg';
+// import react from '../images/react.jpg';
+// import go from '../images/go.png';
+// import rust from '../images/rust.jpg';
+// import cpp from '../images/cplusplus.jpg';
 
 function Cart({basketProps, productQuantity, clearProduct}) {
-    console.log(basketProps);
+    console.log(`basket Prop + ${basketProps}`);
     let productsInCart = [];
 
     Object.keys(basketProps.products).forEach( function(item) {
@@ -21,7 +21,8 @@ function Cart({basketProps, productQuantity, clearProduct}) {
     });
 
     // const productImages = [greyTshirt, greyHoddie, blackTshirt, blackHoddie];
-    const productImages = (product) => {
+    // No need to import images from src images folder.
+    /* const productImages = (product) => {
         if( product.tagName === 'cpp') {
             return cpp;
         } else if(product.tagName === 'react') {
@@ -34,14 +35,15 @@ function Cart({basketProps, productQuantity, clearProduct}) {
         } else if(product.tagName === 'rust'){
             return rust;
         }
-    }
+    } */
 
     productsInCart = productsInCart.map( (product, index) => {
         console.log("My product is");
         console.log(product);
         return (
             <Fragment key={index}>     
-                <div className="product"><ion-icon onClick={() => clearProduct(product.tagName)} name="close-circle"></ion-icon><img src={productImages(product)} />
+                {/* <div className="product"><ion-icon onClick={() => clearProduct(product.tagName)} name="close-circle"></ion-icon><img src={productImages(product)} /> */}
+                <div className="product"><ion-icon onClick={() => clearProduct(product.tagName)} name="close-circle"></ion-icon><img src={`../images/${product.imgUrl}`} alt={product.name} />
                     <span className="sm-hide">{product.name}</span>
                 </div>
                 <div className="price sm-hide">${product.price}.00</div>
@@ -68,7 +70,7 @@ function Cart({basketProps, productQuantity, clearProduct}) {
             </div>
             <div className="basketTotalContainer">
                 <h4 className="basketTotalTitle">Basket Total</h4>
-                <h4 className="basketTotal">{basketProps.cartCost}.00</h4>
+                <h4 className="basketTotal">${basketProps.cartCost}.00</h4>
             </div>
         </div>
     )

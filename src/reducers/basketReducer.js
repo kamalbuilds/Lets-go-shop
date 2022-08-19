@@ -1,66 +1,20 @@
 import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET, INCREASE_QUANTITY, DECREASE_QUANTITY, CLEAR_PRODUCT } from '../actions/types';
+import allBooks from '../data/books';
 const initialState = {
     basketNumbers: 0,
     cartCost: 0,
-    products: {
-        rust:{
-            name: 'Rust',
-            tagName: 'rust',
-            price: '$15',
-            numbers: 0,
-            incart:false
-        },
-        react: {
-            name: "ReactJS",
-            tagName: 'react',
-            price: 6.00,
-            numbers: 0,
-            inCart: false
-        },
-        greyHoddie: {
-            name: "Grey Hoddie",
-            tagName: 'greyHoddie',
-            price: 35.00,
-            numbers: 0,
-            inCart: false
-        },
-        blackTshirt: {
-            name: "Black Tshirt",
-            tagName: 'blackTshirt',
-            price: 14.00,
-            numbers: 0,
-            inCart: false
-        },
-        typescript: {
-            name: "typescript",
-            tagName: 'typescript',
-            price: 15.00,
-            numbers: 0,
-            inCart: false
-        },
-        go: {
-            name: "Go lang",
-            tagName: 'go',
-            price: 35.00,
-            numbers: 0,
-            inCart: false
-        },
-        cpp: {
-            name: "cpp",
-            tagName: 'cpp',
-            price: 5.00,
-            numbers: 0,
-            inCart: false
-        }
-
-    }
+    books: allBooks,
+    products: { }
 }
 
 export default (state = initialState, action) => {
     let productSelected = "";
+    // let productId = "";
     switch(action.type) {
         case ADD_PRODUCT_BASKET:
-            productSelected = { ...state.products[action.payload]}
+            // productSelected = { ...state.products[action.payload] }
+            productSelected = { ...state.books.find(book => book.tagName === action.payload) };
+            // console.log(`Product ID: ${JSON.stringify(productId)}`);
             
             productSelected.numbers += 1;
             productSelected.inCart = true;
@@ -69,7 +23,8 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 basketNumbers: state.basketNumbers + 1,
-                cartCost: state.cartCost + state.products[action.payload].price,
+                // cartCost: state.cartCost + state.products[action.payload].price,
+                cartCost: state.cartCost + productSelected.price,
                 products: {
                     ...state.products,
                     [action.payload]: productSelected
@@ -81,12 +36,13 @@ export default (state = initialState, action) => {
             }
         case INCREASE_QUANTITY:
                                     // state.products['blackTshirt']            
-            productSelected = { ...state.products[action.payload]}
+            productSelected = { ...state.products[action.payload] }
             productSelected.numbers += 1;
             return {
                 ...state,
                 basketNumbers: state.basketNumbers + 1,
-                cartCost: state.cartCost + state.products[action.payload].price,
+                // cartCost: state.cartCost + state.products[action.payload].price,
+                cartCost: state.cartCost + productSelected.price,
                 products: {
                     ...state.products,
                     [action.payload]: productSelected
