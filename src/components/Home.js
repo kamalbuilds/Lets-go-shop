@@ -5,8 +5,8 @@ import { connect } from 'react-redux';
 import { addBasket } from '../actions/addAction';
 import typescript from '../images/ts.jpg';
 import cpp from '../images/cplusplus.jpg';
-import rust from '../images/rust.jpg';
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import rust from '../images/rust.png';
+
 
 const Home = (props) => {
     console.log('home props',props);
