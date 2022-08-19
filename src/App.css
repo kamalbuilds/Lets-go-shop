@@ -127,10 +127,8 @@ img {
   margin-right: 10px;
   cursor: pointer;
 }
-.container-products .delete {
-  color: #e32222;
-}
-.container-products .decrease {
+.container-products .delete,
+.decrease {
   color: #e32222;
 }
 .container-products .increase {
