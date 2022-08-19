@@ -128,10 +128,12 @@ img {
   cursor: pointer;
 }
 .container-products .delete {
-  color: rgb(182, 67, 67);
+  color: #e32222;
 }
-.container-products .decrease,
-.increase {
+.container-products .decrease {
+  color: #e32222;
+}
+.container-products .increase {
   color: green;
 }
 
