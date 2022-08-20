@@ -69,6 +69,9 @@ function Cart({basketProps, productQuantity, clearProduct}) {
             <div className="basketTotalContainer">
                 <h4 className="basketTotalTitle">Basket Total</h4>
                 <h4 className="basketTotal">{basketProps.cartCost}.00</h4>
+                <Button variant="contained" color="primary">Checkout
+                    <Link to="/About"/>
+                </Button>
             </div>
         </div>
     )
