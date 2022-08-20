@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 // import go from '../images/go.png';
 import { connect } from 'react-redux';
 import { addBasket } from '../actions/addAction';
+
 // import typescript from '../images/ts.jpg';
 // import cpp from '../images/cplusplus.jpg';
-// import rust from '../images/rust.jpg';
+// import rust from '../images/rust.png';
 import books from '../data/books';
+
 
 const Home = (props) => {
     
