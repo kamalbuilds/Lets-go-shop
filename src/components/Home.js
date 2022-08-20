@@ -7,6 +7,7 @@ import typescript from '../images/ts.jpg';
 import cpp from '../images/cplusplus.jpg';
 import rust from '../images/rust.png';
 
+
 const Home = (props) => {
     console.log('home props',props);
     return(
