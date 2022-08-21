@@ -219,6 +219,8 @@ img {
 
   .products,
   .product-header {
+    position: relative;
+    top: 10px;
     justify-content: center;
   }
 

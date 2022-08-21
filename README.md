@@ -54,6 +54,8 @@ npm install
 ```
 npm run start
 ```
+<video src='./doc/resp.webm' width=180/>
+
 <h2>Future Aspect</h2>
 
 * In future the project needs a payment gateway for users to buy smoothly.
