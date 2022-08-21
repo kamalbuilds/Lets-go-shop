@@ -13,9 +13,16 @@ export default (state = initialState, action) => {
     switch(action.type) {
         case ADD_PRODUCT_BASKET:
             // productSelected = { ...state.products[action.payload] }
-            productSelected = { ...state.books.find(book => book.tagName === action.payload) };
-            // console.log(`Product ID: ${JSON.stringify(productId)}`);
+
+            // Find if the item is already in the shopping cart (products)
+            let alreadyInCart = state.products.hasOwnProperty(action.payload);
             
+            if (alreadyInCart) {
+                productSelected = { ...state.products[action.payload] }
+            } else {
+                // If not in the cart get it from the database
+                productSelected = { ...state.books.find(book => book.tagName === action.payload) };    
+            }
             productSelected.numbers += 1;
             productSelected.inCart = true;
             console.log(`product selected is ${productSelected.name}`);
