@@ -20,36 +20,39 @@ function Navbar(props) {
         <h2>Let's Shop 💝</h2>
         <ul>
           <li>
-            <Button
-              variant="contained"
-              sx={{ color: 'white', backgroundColor: 'orange' }}
-            >
-              <Link to="/">Home</Link>
-            </Button>
+            <Link to="/">
+              <Button
+                variant="contained"
+                sx={{ color: 'Black', backgroundColor: 'orange' }}              >
+                Home
+              </Button>
+            </Link>
           </li>
           <li>
-            <Button
-              variant="contained"
-                sx={{ color: 'white', backgroundColor: 'orange' }}
-            >
-              <Link to="/about">About</Link>
-            </Button>
+            <Link to="/about">
+              <Button
+                variant="contained"
+                  sx={{ color: 'Black', backgroundColor: 'orange' }}
+              >
+                About
+              </Button>
+            </Link>
           </li>
           <li>
-            <Button
+            <Link to="/cart">
+              <Button
               variant="contained"
               startIcon={<ShoppingCartIcon style={{color:"green"}} size="large" />}
               style={{
                 backgroundColor: "orange",
-                color: "red",
+                color: "green",
                 listStyle: "none",
                 textDecoration:"none"
               }}
-            >
-              <Link to="/cart">
-                <span>{props.basketProps.basketNumbers}</span>
-              </Link>
-            </Button>
+            >     
+                <span>{props.basketProps.basketNumbers}</span>            
+              </Button>
+            </Link>
           </li>
         </ul>
       </nav>
