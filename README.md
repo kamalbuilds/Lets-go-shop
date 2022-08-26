@@ -62,4 +62,8 @@ npm run start
 
 * A map where users can track their order.
 
+## Hello Contributors 👋🏻
+
+- **Take a look at the [Contributing Guidelines](CONTRIBUTING.md) for proper contributions**
+
 <video src='../doc/resp.webm' width=180/>
