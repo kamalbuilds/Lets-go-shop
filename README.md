@@ -16,7 +16,11 @@
 <h3>◉ Increase /Decrease the quantity of products</h3>
 <h3>◉ Remove directly if you changed your mind from the cart page</h3>
 
-What I learnt from this project?
+<p align = "center">
+Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo
+</p>
+
+<h2>What I learnt from this project?</h2>
 
 1> How to Pass a state from one component to another using state
 
