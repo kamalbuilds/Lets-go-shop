@@ -61,3 +61,5 @@ npm run start
 * More products to be added in the future.
 
 * A map where users can track their order.
+
+<video src='../doc/resp.webm' width=180/>
