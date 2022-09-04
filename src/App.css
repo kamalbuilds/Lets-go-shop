@@ -96,14 +96,19 @@ img {
   bottom: 50px !important;
   transition: all 0.5s ease-in-out;
   opacity: 0;
-  color: green;
+  color: black;
   cursor: pointer;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.addToCart_icon{
-  font-size: 34px !important;
+.addToCart_icon {
+  font-size: 25px !important;
   color: black;
+  margin-left: 10px;
 }
 
 .image:hover .cart1,
