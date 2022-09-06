@@ -8,8 +8,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  color: white;
+}
 header {
-  background-image: url("./images/cover.jpg");
+  background-image: url("./images/cover-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
