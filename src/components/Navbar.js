@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { getNumbers } from "../actions/getAction";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function Navbar(props) {
   console.log("Top Navbar", props);
@@ -22,7 +22,8 @@ function Navbar(props) {
             <Link to="/">
               <Button
                 variant="contained"
-                sx={{ color: 'Black', backgroundColor: 'orange' }}              >
+                sx={{ color: "Black", backgroundColor: "orange" }}
+              >
                 Home
               </Button>
             </Link>
@@ -31,7 +32,7 @@ function Navbar(props) {
             <Link to="/about">
               <Button
                 variant="contained"
-                  sx={{ color: 'Black', backgroundColor: 'orange' }}
+                sx={{ color: "Black", backgroundColor: "orange" }}
               >
                 About
               </Button>
@@ -40,16 +41,18 @@ function Navbar(props) {
           <li>
             <Link to="/cart">
               <Button
-              variant="contained"
-              startIcon={<ShoppingCartIcon style={{color:"green"}} size="large" />}
-              style={{
-                backgroundColor: "orange",
-                color: "green",
-                listStyle: "none",
-                textDecoration:"none"
-              }}
-            >     
-                <span>{props.basketProps.basketNumbers}</span>            
+                variant="contained"
+                startIcon={
+                  <ShoppingCartIcon style={{ color: "green" }} size="large" />
+                }
+                style={{
+                  backgroundColor: "orange",
+                  color: "green",
+                  listStyle: "none",
+                  textDecoration: "none",
+                }}
+              >
+                <span>{props.basketProps.basketNumbers}</span>
               </Button>
             </Link>
           </li>
