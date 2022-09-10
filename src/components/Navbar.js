@@ -14,7 +14,7 @@ function Navbar(props) {
   }, []);
   return (
     <header>
-      <div className="overlay"></div>
+      <div className="overlay">
       <nav>
         <h2>Let's Shop 💝</h2>
         <ul>
@@ -57,7 +57,8 @@ function Navbar(props) {
             </Link>
           </li>
         </ul>
-      </nav>
+        </nav>
+        </div>
     </header>
   );
 }

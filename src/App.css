@@ -40,7 +40,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 60px 0 60px;
+  padding-top: 50px;
 }
 
 nav li {
@@ -213,10 +213,11 @@ img {
   nav h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin: auto;
+    padding-bottom: 10px;
   }
 
-  .sm-hide {
+  nav .sm-hide {
     display: none;
   }
 
@@ -230,4 +231,24 @@ img {
   .basketTotalContainer {
     padding-right: 8%;
   }
+
+  nav ul {
+    margin: auto;
+  }
 }
+
+@media (min-width: 500px) {
+  nav ul {
+    padding-right: 50px;
+  }
+}
+
+/* Fixing the navbar width */
+/*the issue is with the padding from the nav section*/
+/* @media (min-width:300px){
+  ul li Button{
+    display: inline-block;
+    margin: 10px;
+    padding: ;
+  }
+} */
