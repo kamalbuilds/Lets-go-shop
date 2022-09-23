@@ -9,12 +9,12 @@
 
 </div>
 <h2>Features of this project</h2>
-<h3>◉ This project is a perfect example of how to implement Redux with React.</h3>
-<h3>◉ Select products from the home page that the site got to offer</h3>
-<h3>◉ Add to Cart</h3>
-<h3>◉ Visit the cart page to see your selected products</h3>
-<h3>◉ Increase /Decrease the quantity of products</h3>
-<h3>◉ Remove directly if you changed your mind from the cart page</h3>
+<div>◉ This project is a perfect example of how to implement Redux with React.</div>
+<div>◉ Select products from the home page that the site got to offer</div>
+<div>◉ Add to Cart</div>
+<div>◉ Visit the cart page to see your selected products</div>
+<div>◉ Increase /Decrease the quantity of products</div>
+<div>◉ Remove directly if you changed your mind from the cart page</div>
 
 <p align = "center">
 Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo
