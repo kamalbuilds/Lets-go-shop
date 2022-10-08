@@ -70,4 +70,8 @@ npm run start
 
 - **Take a look at the [Contributing Guidelines](CONTRIBUTING.md) for proper contributions**
 
+## Thanks to all the contributors ❤️
+<a href = "https://github.com/legendarykamal/Lets-go-shop/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=legendarykamal/Lets-go-shop">
+</a>
 <video src='../doc/resp.webm' width=180/>
