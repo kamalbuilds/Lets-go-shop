@@ -13,7 +13,7 @@
 <div>◉ Select products from the home page that the site got to offer</div>
 <div>◉ Add to Cart</div>
 <div>◉ Visit the cart page to see your selected products</div>
-<div>◉ Increase /Decrease the quantity of products</div>
+<div>◉ Increase / Decrease the quantity of products</div>
 <div>◉ Remove directly if you changed your mind from the cart page</div>
 
 <p align = "center">
