@@ -1,72 +1,28 @@
-import {
-    ADD_PRODUCT_BASKET,
-    GET_NUMBERS_BASKET,
-    INCREASE_QUANTITY,
-    DECREASE_QUANTITY,
-    CLEAR_PRODUCT,
-} from "../actions/types";
+import { ADD_PRODUCT_BASKET, GET_NUMBERS_BASKET, INCREASE_QUANTITY, DECREASE_QUANTITY, CLEAR_PRODUCT } from '../actions/types';
+import allBooks from '../data/books';
 const initialState = {
     basketNumbers: 0,
     cartCost: 0,
-    products: {
-        rust: {
-            name: "Rust",
-            tagName: "rust",
-            price: 15,
-            numbers: 0,
-            incart: false,
-        },
-        react: {
-            name: "ReactJS",
-            tagName: "react",
-            price: 6.0,
-            numbers: 0,
-            inCart: false,
-        },
-        greyHoddie: {
-            name: "Grey Hoddie",
-            tagName: "greyHoddie",
-            price: 35.0,
-            numbers: 0,
-            inCart: false,
-        },
-        blackTshirt: {
-            name: "Black Tshirt",
-            tagName: "blackTshirt",
-            price: 14.0,
-            numbers: 0,
-            inCart: false,
-        },
-        typescript: {
-            name: "typescript",
-            tagName: "typescript",
-            price: 15.0,
-            numbers: 0,
-            inCart: false,
-        },
-        go: {
-            name: "Go lang",
-            tagName: "go",
-            price: 35.0,
-            numbers: 0,
-            inCart: false,
-        },
-        cpp: {
-            name: "cpp",
-            tagName: "cpp",
-            price: 5.0,
-            numbers: 0,
-            inCart: false,
-        },
-    },
-};
+    books: allBooks,
+    products: { }
+}
 
 export default (state = initialState, action) => {
     let productSelected = "";
-    switch (action.type) {
+    // let productId = "";
+    switch(action.type) {
         case ADD_PRODUCT_BASKET:
-            productSelected = { ...state.products[action.payload] };
+            // productSelected = { ...state.products[action.payload] }
 
+            // Find if the item is already in the shopping cart (products)
+            let alreadyInCart = state.products.hasOwnProperty(action.payload);
+            
+            if (alreadyInCart) {
+                productSelected = { ...state.products[action.payload] }
+            } else {
+                // If not in the cart get it from the database
+                productSelected = { ...state.books.find(book => book.tagName === action.payload) };    
+            }
             productSelected.numbers += 1;
             productSelected.inCart = true;
             console.log(`product selected is ${productSelected.name}`);
@@ -74,7 +30,8 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 basketNumbers: state.basketNumbers + 1,
-                cartCost: state.cartCost + state.products[action.payload].price,
+                // cartCost: state.cartCost + state.products[action.payload].price,
+                cartCost: state.cartCost + productSelected.price,
                 products: {
                     ...state.products,
                     [action.payload]: productSelected,
@@ -91,7 +48,8 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 basketNumbers: state.basketNumbers + 1,
-                cartCost: state.cartCost + state.products[action.payload].price,
+                // cartCost: state.cartCost + state.products[action.payload].price,
+                cartCost: state.cartCost + productSelected.price,
                 products: {
                     ...state.products,
                     [action.payload]: productSelected,
